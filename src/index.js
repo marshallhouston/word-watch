@@ -1,5 +1,9 @@
 import $ from 'jquery'
+import { Listeners } from './listeners'
+import { topWord } from './wordRequests'
 
 $(document).ready(() => {
-  // have fun!
+  topWord()
+  Listeners.breakDownClick()
+  Listeners.breakDownEnter()
 })
